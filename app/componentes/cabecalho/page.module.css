@@ -1,0 +1,36 @@
+.cabecalho {
+  position: fixed;
+  margin-top: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 60px;
+  background-color: var(--color-background-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #FFFFFF;
+  font-size: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #374151;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 25px;
+}
+
+.linkDiferente {
+  color: var(--color-accent-blue);
+}
+
+.link {
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: var(--color-accent-blue-hover);
+}

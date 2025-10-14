@@ -1,0 +1,6 @@
+.lista {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: first baseline;
+}

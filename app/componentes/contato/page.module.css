@@ -1,0 +1,11 @@
+.contatoLista {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
