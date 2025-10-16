@@ -1,4 +1,4 @@
-"use clint"
+"use clinte"
 
 import React, { useState } from "react";
 import {
