@@ -1,0 +1,47 @@
+.botao-curriculo {
+  position: relative;
+  background: var(--color-accent-blue);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.botao-curriculo:hover {
+  background: var(--color-accent-blue-hover);
+}
+
+.label {
+  position: relative;
+  z-index: 2;
+}
+
+.shapes {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.blush {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 0.4;
+}
+
+.azul {
+  background: var(--color-accent-blue);
+}
+
+.azul-escuro {
+  background: var(--color-accent-blue-hover);
+}

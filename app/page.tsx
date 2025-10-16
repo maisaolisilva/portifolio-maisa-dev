@@ -47,7 +47,11 @@ export default function Home() {
           </section>
         </div>
       </main>
-      <footer className={styles.footer}>© 2025 - Desenvolvido por Maisa <Link href={"https://github.com/maisaolisilva/portifolio-maisa-dev"} target="_blank" rel="noopener noreferrer"> <GitHubIcon /> Repositótio do Projeto</Link></footer>
+      <footer className={styles.footer}>
+        <p>© 2025 - Desenvolvido por Maisa</p>
+        <Link href={"https://github.com/maisaolisilva/portifolio-maisa-dev"} target="_blank" rel="noopener noreferrer" className={styles.linkFooter}>
+        <GitHubIcon /> Repositório do Projeto</Link>
+      </footer>
     </>
   );
 }

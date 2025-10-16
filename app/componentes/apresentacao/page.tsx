@@ -7,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css"; // substitui pelo teu ficheiro real
+import BotaoCurriculo from "./botaoCurriculo/page";
 
 export default function Apresentacao() {
   // Refs e estados de visibilidade
@@ -39,15 +40,7 @@ export default function Apresentacao() {
         </p>
         <ul className={styles.lista}>
           <li>
-            <Button
-              variant="contained"
-              size="large"
-              onClick={() =>
-                window.open("./arquivos/Maisa-Oliveira-Curriculo.pdf")
-              }
-            >
-              Download Currículo
-            </Button>
+            <BotaoCurriculo />
           </li>
           <li>
             <Button variant="outlined" size="large">
