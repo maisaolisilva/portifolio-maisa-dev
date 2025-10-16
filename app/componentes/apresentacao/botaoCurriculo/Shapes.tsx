@@ -1,8 +1,15 @@
 "use client";
 
-import { motion, useTransform } from "framer-motion";
+import { motion, MotionValue, useTransform } from "framer-motion";
 
-export function Shapes({ isHover, isPress, mouseX, mouseY }: any) {
+interface ShapesProps {
+  isHover: boolean;
+  isPress: boolean;
+  mouseX: MotionValue<number>;
+  mouseY: MotionValue<number>;
+}
+
+export function Shapes({ isHover, isPress, mouseX, mouseY }: ShapesProps) {
   const rotateX = useTransform(mouseY, [-50, 50], [15, -15]);
   const rotateY = useTransform(mouseX, [-50, 50], [-15, 15]);
   const scale = useTransform(mouseY, [-100, 100], [1.1, 0.9]);
