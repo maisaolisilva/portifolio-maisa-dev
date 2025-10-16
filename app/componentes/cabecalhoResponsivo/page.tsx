@@ -8,7 +8,7 @@ export default function CabecalhoResponsivel() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 540px)");
+    const mediaQuery = window.matchMedia("(max-width: 550px)");
 
     // Atualiza o estado com base na largura atual da tela
     const handleResize = () => setIsMobile(mediaQuery.matches);
