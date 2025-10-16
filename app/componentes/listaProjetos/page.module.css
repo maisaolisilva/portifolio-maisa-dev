@@ -1,6 +1,8 @@
 .lista {
     display: flex;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
     align-items: first baseline;
+    gap: 2em;
 }

@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./page.module.css"; // substitui pelo teu ficheiro real
+import styles from "./page.module.css"; 
 import BotaoCurriculo from "./botaoCurriculo/page";
 
 export default function Apresentacao() {

@@ -5,10 +5,12 @@
   align-items: center;
   justify-items: center;
   padding-bottom: 20%;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid #374151;
 }
 
+/* Texto */
 .textoApresentacao {
   display: flex;
   flex-direction: column;
@@ -27,8 +29,35 @@
   gap: 20px;
 }
 
+/* Botão Linkedin */
 .botaoLinkedin {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+  .apresentacao {
+    grid-template-columns: 1fr; /* Uma coluna */
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "imagem"
+      "texto";
+    padding-bottom: 20%;
+  }
+
+  /* garante que os elementos sigam a ordem visual */
+  .apresentacao > div:nth-child(1) {
+    grid-area: texto;
+  }
+
+  .apresentacao > div:nth-child(2) {
+    grid-area: imagem;
+    margin-bottom: 20px;
+  }
+
+  .textoApresentacao > p {
+    text-align: center;
+  }
 }
