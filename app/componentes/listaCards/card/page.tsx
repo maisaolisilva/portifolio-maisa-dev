@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { Card, CardContent, Typography, Box } from "@mui/material";
 
 interface props {
-    titulo: String,
-    frase: String,
+    titulo: string,
+    frase: string,
 }
 
 export default function CardCustomizado({ titulo, frase }: props) {
